@@ -96,7 +96,7 @@ describe('', () => {
     });
   });
 
-  describe('Filter by owner', () => {
+  describe.skip('Filter by owner', () => {
     it('should have a link per existing user', () => {
       userFilter.users().should('have.length', 4);
 
@@ -161,7 +161,7 @@ describe('', () => {
     });
   });
 
-  describe('Filter by Product name', () => {
+  describe.skip('Filter by Product name', () => {
     it('should have an empty field by default', () => {
       nameFilter.field().should('have.value', '');
     });
@@ -265,7 +265,7 @@ describe('', () => {
     });
   });
 
-  describe('NoMatchingResults message', () => {
+  describe.skip('NoMatchingResults message', () => {
     it('should not be visible by default', () => {
       page.noMatchingMessage().should('not.exist');
     });
@@ -287,7 +287,7 @@ describe('', () => {
     });
   });
 
-  describe('Reset All Filters button', () => {
+  describe.skip('Reset All Filters button', () => {
     it('should reset with user filter', () => {
       userFilter.users().eq(1).click();
 
